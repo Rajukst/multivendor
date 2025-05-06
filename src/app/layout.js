@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TopNav from "@/common/TopNav";
 import SecondTopNav from "@/common/SecondTopNav";
 import CategoryNav from "@/common/CategoryNav";
-
+import LandingSlider from "@/common/LandingSlider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

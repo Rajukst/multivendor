@@ -21,7 +21,7 @@ const SecondTopNav = () => {
                 <span><i className="fa-solid fa-code-compare"></i></span>
                 <span><i className="fa-solid fa-heart"></i></span>
                 <div className="myCart">
-                    <i className="fa-solid fa-cart-shopping mt-1 me-2"></i>
+                    <i className="fa-solid fa-cart-shopping me-2"></i>
                     <div className="carts">
                         <strong>My Cart</strong>
                         <article className="itemCout">0 Item(s)</article>
