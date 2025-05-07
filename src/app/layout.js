@@ -5,6 +5,9 @@ import TopNav from "@/common/TopNav";
 import SecondTopNav from "@/common/SecondTopNav";
 import CategoryNav from "@/common/CategoryNav";
 import LandingSlider from "@/common/LandingSlider";
+import Footer from "@/common/Footer";
+import FooterTwo from "@/common/FooterTwo";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +41,16 @@ export default function RootLayout({ children }) {
      <SecondTopNav/>
      <CategoryNav/>
         {children}
+        <footer>
+        <div className="footers mt-5">
+          <Footer/>
+        </div>
+        <div className="footerTwo pt-3">
+        <FooterTwo/>
+        </div>
+      </footer>
       </body>
+    
     </html>
   );
 }

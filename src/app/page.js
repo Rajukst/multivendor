@@ -65,14 +65,17 @@ export default function Home() {
 
                 {/* Hover actions on right side with animations */}
                 <div className="hover-actions">
-                  <button className="action-button btn-1">
+                  <button title="Add To Cart" className="action-button btn-1">
                     <i className="fa-solid fa-cart-shopping"></i>
                   </button>
-                  <button className="action-button btn-2">
+                  <button title="Add To WishList" className="action-button btn-2">
                     <i className="fa-solid fa-heart"></i>
                   </button>
-                  <button className="action-button btn-3">
+                  <button title="Quick View" className="action-button btn-3">
                     <i className="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <button title="Add To Compare" className="action-button btn-3">
+                  <i className="fa-solid fa-code-compare"></i>
                   </button>
                 </div>
               </div>
