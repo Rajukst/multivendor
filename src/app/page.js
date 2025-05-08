@@ -60,46 +60,46 @@ export default function Home() {
               </div>
             </div>
             <div className="product-card">
-              <div className="img-container">
-                <Image src={product2} alt="Product 2" className="product-img" />
-
-                {/* Hover actions on right side with animations */}
-                <div className="hover-actions">
-                  <button title="Add To Cart" className="action-button btn-1">
-                    <i className="fa-solid fa-cart-shopping"></i>
-                  </button>
-                  <button title="Add To WishList" className="action-button btn-2">
-                    <i className="fa-solid fa-heart"></i>
-                  </button>
-                  <button title="Quick View" className="action-button btn-3">
-                    <i className="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                  <button title="Add To Compare" className="action-button btn-3">
-                  <i className="fa-solid fa-code-compare"></i>
-                  </button>
-                </div>
-              </div>
-
-              <div className="productDesc">
-                <article>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Tenetur, molestias?
-                </article>
-                <div className="rattings mt-2">
-                  <div className="stars">
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                  </div>
-                  <div className="starcout ms-2">(12 person)</div>
-                </div>
-                <div className="amount">
-                  <article>$ 199</article>
-                </div>
-              </div>
-            </div>
+  <div className="img-container">
+    {/* Discount badge */}
+    <div className="discount-badge">-20%</div>
+    
+    <Image src={product2} alt="Product 2" className="product-img" />
+    
+    {/* Hover actions on right side with animations */}
+    <div className="hover-actions">
+      <button className="action-button btn-1">
+        <i className="fa-solid fa-cart-shopping"></i>
+      </button>
+      <button className="action-button btn-2">
+        <i className="fa-solid fa-heart"></i>
+      </button>
+      <button className="action-button btn-3">
+        <i className="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+  </div>
+  
+  <div className="productDesc">
+    <article>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Tenetur, molestias?
+    </article>
+    <div className="rattings mt-2">
+      <div className="stars">
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+        <i className="fa-solid fa-star"></i>
+      </div>
+      <div className="starcout ms-2">(12 person)</div>
+    </div>
+    <div className="amount">
+      <article>$ 199</article>
+    </div>
+  </div>
+</div>
             <div className="product-card">
               <Image src={product3} alt="Product 2" className="product-img" />
               <div className="productDesc">

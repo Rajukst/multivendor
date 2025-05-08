@@ -222,6 +222,34 @@ body {
   overflow: hidden;
 }
 
+/* Discount badge styling */
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #6cc060; /* Green color similar to image */
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  z-index: 3;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  /* Optional subtle animation */
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
 /* Image animation on hover */
 .product-img {
   width: 100%;
@@ -334,6 +362,7 @@ body {
 .stars {
   color: #FFD700;
 }
+
 .footers{
   background-color: var(--background-color);
 }
@@ -377,34 +406,7 @@ border-bottom-right-radius: 5px;
   background-color: white !important;
   border-top: 3px solid var(--accent-color);
 }
-.section-heading {
-  padding: 20px;
-  position: relative;
-}
 
-.section-heading h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #000; /* dark text */
-  margin-bottom: 10px;
-}
-
-.underline {
-  height: 2px;
-  width: 60px; /* length of the orange line */
-  background-color: orange;
-  position: relative;
-}
-
-.underline::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 60px; /* aligns with end of orange line */
-  height: 2px;
-  width: calc(100% - 60px);
-  background-color: #000000 !important; /* light gray horizontal line */
-}
 
 /* Media Queries */
 
