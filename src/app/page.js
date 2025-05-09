@@ -56,6 +56,8 @@ export default function Home() {
                 </div>
                 <div className="amount">
                   <article>$ 199</article>
+                  <article>$ 200</article>
+
                 </div>
               </div>
             </div>
@@ -77,6 +79,9 @@ export default function Home() {
       <button className="action-button btn-3">
         <i className="fa-solid fa-magnifying-glass"></i>
       </button>
+      <button className="action-button btn-3">
+       <i className="fa-solid fa-code-compare"></i>
+      </button>
     </div>
   </div>
   
@@ -97,6 +102,7 @@ export default function Home() {
     </div>
     <div className="amount">
       <article>$ 199</article>
+      <article>$ 200</article>
     </div>
   </div>
 </div>
