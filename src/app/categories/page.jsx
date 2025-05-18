@@ -1,16 +1,18 @@
+import AccordionWithSearch from "@/client/AccordionWithSearch";
 import React from "react";
 import { Container } from "react-bootstrap";
 
 export default function Categories() {
+  
   return (
     <>
       <Container className="mt-4">
         <div className="categorysection">
-          <div className="leftcat">
-            <h2>Left Categories</h2>
-          </div>
+          <div className="searchaccom">
+            <AccordionWithSearch/>
+            </div>
           <div className="rightcat">
-            <h4>Bluetooth Speakers</h4>
+            <h4>Bluetooth Spea</h4>
             <div className="categoryopt">
               <div className="div"></div>
               <div className="categoryrightopt">
