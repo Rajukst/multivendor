@@ -138,15 +138,7 @@ const AccordionWithSearch = () => {
           }}
         >
           <div className="accordion-body">
-            <div className="price-option">
-              <input type="radio" name="price" id="price-76" />
-              <label htmlFor="price-76">$76.00</label>
-            </div>
-            <div className="price-option">
-              <input type="radio" name="price" id="price-100" />
-              <label htmlFor="price-100">$100.00</label>
-            </div>
-            {/* Add more price options as needed */}
+            <h5>Price sort</h5>
           </div>
         </div>
       </div>
