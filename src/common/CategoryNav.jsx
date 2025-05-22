@@ -16,8 +16,8 @@ const CategoryNav = () => {
           <h6>Best Sellers</h6>
         </div>
         <div className="navcatright">
-          <h6><i className="fa-solid fa-location-dot me-1"></i>Locate Me</h6>
-          <h6><i className="fa-solid fa-fire-flame-curved me-1"></i>Todays Deal</h6>
+          <h6><i className="fa-solid fa-location-dot me-1"></i>Todays Deal</h6>
+          <h6><i className="fa-solid fa-fire-flame-curved me-1"></i>Track Order</h6>
         </div>
       </div>
     </>
