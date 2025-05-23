@@ -1,11 +1,14 @@
 import Image from "next/image";
 import logo from "../assets/logo.png";
+import Link from "next/link";
 
 const SecondTopNav = () => {
     return (
         <div className="secondtopnav">
             <div className="nav-logo">
+                <Link href="/">
                 <Image src={logo} alt="Logo" width={120} height={40} />
+                </Link>
             </div>
 
             <div className="nav-search">
@@ -18,14 +21,20 @@ const SecondTopNav = () => {
             </div>
 
             <div className="nav-icons">
+                <Link href="/comparelist">
                 <span><i className="fa-solid fa-code-compare"></i></span>
+                </Link>
+                <Link href="/wishlist">
                 <span><i className="fa-solid fa-heart"></i></span>
+                </Link>
                 <div className="myCart">
+                    <Link className="" href="/cart">
                     <i className="fa-solid fa-cart-shopping me-2"></i>
                     <div className="carts">
                         <strong>My Cart</strong>
                         <article className="itemCout">0 Item(s)</article>
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>

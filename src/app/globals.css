@@ -125,6 +125,8 @@ body {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   color: var(--background-color);
+   position: relative;
+   width: 1fr; /* As per your layout */
 }
 .navcatcenter {
   display: flex;
@@ -1082,6 +1084,173 @@ body {
   font-size: 1.1rem;
 }
 
+
+
+.navcatleft h6 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Menu */
+.navcatleft .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%; /* Takes 100% of parent's width (1fr) */
+  min-width: 200px; /* Minimum width */
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  z-index: 100;
+}
+
+.navcatleft:hover .dropdown-menu {
+  display: block;
+}
+
+/* Menu Items */
+.dropdown-menu h3 {
+  font-size: 16px;
+  margin: 10px 0 5px 0;
+  color: #333;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 5px 0;
+  color: #666;
+}
+
+.dropdown-menu li:hover {
+  color: #000;
+}
+/* Main dropdown container */
+.navcatleft {
+  position: relative;
+}
+
+/* Dropdown menu - matches 1fr width */
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 
+    opacity 0.2s ease-out,
+    transform 0.2s ease-out;
+}
+
+.navcatleft:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subcategory panel - appears outside */
+.subcategory-panel {
+  display: block; /* Changed for animation */
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 250px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  z-index: 110;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: 
+    opacity 0.15s ease-out 0.1s, /* Delayed slightly */
+    transform 0.15s ease-out 0.1s;
+  pointer-events: none; /* Allows hover through invisible element */
+}
+
+.category-item:hover .subcategory-panel {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto; /* Re-enable interactions when visible */
+  cursor: pointer;
+}
+
+/* Category items animation */
+.category-item {
+  padding: 8px 0;
+  position: relative;
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+/* Visual indicator animation */
+.has-subcategory::after {
+  content: "→";
+  margin-left: 8px;
+  color: #999;
+  transition: transform 0.15s ease;
+}
+
+.category-item:hover .has-subcategory::after {
+  transform: translateX(3px);
+}
+/* Cart container */
+.myCart {
+  display: flex;
+  align-items: center;
+}
+
+/* Link element styling */
+.myCart a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Maintains text color */
+  gap: 8px; /* Space between icon and text */
+}
+
+/* Cart text container */
+.carts {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Item count text */
+.itemCout {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.userAccounts{
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  gap: 1rem;
+}
+.lefAcctHeader{
+  background-color: var(--navtop-bg);
+}
+.accountinfo article{
+  padding: 1rem;
+}
+.account-container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.account-sidebar{
+  background-color: var(--navtop-bg);
+}
+.sidebar-nav a{
+  padding: 0.5rem;
+}
 @media (max-width: 768px) {
   .shopping-cart {
     padding: 15px;
