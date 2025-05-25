@@ -19,7 +19,7 @@ export default function AccountLayout({ children }) {
             <i className="icon-lock"></i>
             <span>Change Password</span>
           </Link>
-          <Link href="/account/orders" className="nav-link">
+          <Link href="/useraccount/orderhistory" className="nav-link">
             <i className="icon-history"></i>
             <span>Order History</span>
           </Link>

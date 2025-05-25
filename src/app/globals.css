@@ -1251,6 +1251,27 @@ body {
 .sidebar-nav a{
   padding: 0.5rem;
 }
+.editaccContainer article{
+margin-top: 1rem;
+}
+.editaccContainer input{
+width: 80%;
+height: 2.5rem;
+border: 1px solid lightgray;
+outline: none;
+border-radius: 6px;
+padding-left: 0.5rem;
+}
+.editaccContainer button{
+padding: 0.6rem 1rem;
+border: none;
+outline: none;
+background-color: var(--accent-color);
+font-weight: 600;
+color: var(--background-color);
+border-radius: 6px;
+}
+
 @media (max-width: 768px) {
   .shopping-cart {
     padding: 15px;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 const TopNav=()=>{
@@ -8,7 +9,7 @@ const TopNav=()=>{
         <article>This is Navbar left</article>
       </div>
       <div className="navright">
-        <article>My Account</article>
+        <Link href="/login"><article>My Account</article></Link>
         <article>Language</article>
         <article>Currency</article>
       </div>
