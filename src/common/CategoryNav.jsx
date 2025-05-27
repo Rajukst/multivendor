@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const CategoryNav = () => {
   return (
     <div className="categoryNav">
@@ -67,7 +69,7 @@ const CategoryNav = () => {
       </div>
       <div className="navcatright">
         <h6><i className="fa-solid fa-location-dot me-1"></i>Todays Deal</h6>
-        <h6><i className="fa-solid fa-fire-flame-curved me-1"></i>Track Order</h6>
+        <h6><i className="fa-solid fa-fire-flame-curved me-1"></i><Link href="/trackorder">Track Order</Link></h6>
       </div>
     </div>
   );

@@ -49,12 +49,45 @@ const Login = () => {
     }
   };
 
+  const handleForgotPassword = () => {
+    // Implement your forgot password logic here
+    alert('Forgot password clicked');
+  };
+
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit} className="login-form">
         {/* Logo instead of h1 */}
         <div className="logo-container">
           <Image src={logo} alt="Company Logo" className="login-logo" />
+        </div>
+        
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.email}
+            onChange={handleChange}
+            className={errors.email ? 'error' : ''}
+            placeholder='Your Name'
+          />
+          {errors.email && <span className="error-message">{errors.email}</span>}
+        </div>
+        
+        <div className="form-group">
+          <label htmlFor="phone">Phone Number</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            value={formData.email}
+            onChange={handleChange}
+            className={errors.email ? 'error' : ''}
+            placeholder='Your Email'
+          />
+          {errors.email && <span className="error-message">{errors.email}</span>}
         </div>
         
         <div className="form-group">
@@ -84,35 +117,15 @@ const Login = () => {
           />
           {errors.password && <span className="error-message">{errors.password}</span>}
         </div>
-
-        <div className="login-options">
-          <div className="remember-me">
-            <input
-              type="checkbox"
-              id="rememberMe"
-              name="rememberMe"
-              checked={formData.rememberMe}
-              onChange={handleChange}
-            />
-            <label htmlFor="rememberMe">Remember me</label>
-          </div>
-          <Link href="/forgotpass" 
-            type="button" 
-            className="forgot-password"
-          >
-            Forgot password?
-          </Link>
-        </div>
-
         <button 
           type="submit" 
           disabled={isSubmitting}
           className="login-button"
         >
-          {isSubmitting ? 'Logging in...' : 'Login'}
+          {isSubmitting ? 'Registering in...' : 'Register'}
         </button>
         <div className="newUser mt-2">
-        <article>New User? Register <Link href="/register">Here</Link></article>
+        <article>Already User? Login <Link href="/login">Here</Link></article>
       </div>
       </form>
       
